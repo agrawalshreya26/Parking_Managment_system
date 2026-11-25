@@ -1,0 +1,229 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+/* Navigation */
+nav {
+    background-color: #142b47;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #315d8d;
+    border-radius: 5px;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    margin: 30px auto;
+    min-height: 400px;
+}
+
+h2 {
+    color: #1e3a5f;
+    margin: 25px 0 15px;
+}
+
+.container > p {
+    margin-bottom: 15px;
+}
+
+/* Dashboard */
+.dashboard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #00000015;
+}
+
+.card h3 {
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.card h1 {
+    color: #1e3a5f;
+    font-size: 30px;
+}
+
+/* Form */
+.form-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #00000015;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Buttons */
+button, .btn {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e3a5f;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background-color: #315d8d;
+}
+
+.exit-btn {
+    background-color: #d9534f;
+    padding: 8px 15px;
+}
+
+.exit-btn:hover {
+    background-color: #b52b27;
+}
+
+/* Parking Slots */
+.slots {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.slot {
+    padding: 25px 10px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #d5f5df;
+    border: 1px solid #8ed6a3;
+    font-weight: bold;
+}
+
+.slot.occupied {
+    background-color: #ffdada;
+    border: 1px solid #e99a9a;
+}
+
+/* Quick Link */
+.quick-link {
+    background-color: white;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 8px;
+    line-height: 2;
+}
+
+.quick-link .btn {
+    margin-top: 10px;
+}
+
+/* Tables */
+.table-container {
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 550px;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #1e3a5f;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .slots {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 3px;
+        padding: 8px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+}

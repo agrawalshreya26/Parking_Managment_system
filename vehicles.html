@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Parking Management System</h1>
+    <p>Vehicle Entry and Exit Management</p>
+</header>
+
+<nav>
+    <a href="index.html">Dashboard</a>
+    <a href="vehicles.html" class="active">Vehicles</a>
+    <a href="history.html">Parking History</a>
+</nav>
+
+<div class="container">
+
+    <h2>Vehicle Entry</h2>
+
+    <div class="form-box">
+
+        <form id="parkingForm">
+
+            <label>Vehicle Number</label>
+            <input type="text" id="vehicleNumber"
+            placeholder="Enter vehicle number" required>
+
+            <label>Vehicle Type</label>
+
+            <select id="vehicleType">
+                <option value="Car">Car</option>
+                <option value="Bike">Bike</option>
+            </select>
+
+            <button type="submit">Park Vehicle</button>
+
+        </form>
+
+    </div>
+
+    <h2>Currently Parked Vehicles</h2>
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Vehicle Number</th>
+                    <th>Type</th>
+                    <th>Slot</th>
+                    <th>Entry Time</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="vehicleTable"></tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Parking Management System | Student Project</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

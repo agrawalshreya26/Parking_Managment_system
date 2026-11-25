@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parking History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Parking Management System</h1>
+    <p>Vehicle Parking Records</p>
+</header>
+
+<nav>
+    <a href="index.html">Dashboard</a>
+    <a href="vehicles.html">Vehicles</a>
+    <a href="history.html" class="active">Parking History</a>
+</nav>
+
+<div class="container">
+
+    <h2>Parking History</h2>
+
+    <p>Details of vehicles that have exited the parking area.</p>
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Vehicle Number</th>
+                    <th>Slot Number</th>
+                    <th>Parking Fee</th>
+                    <th>Exit Time</th>
+                </tr>
+            </thead>
+
+            <tbody id="historyTable"></tbody>
+
+        </table>
+
+    </div>
+
+    <div class="quick-link">
+        <h3>Parking Charges</h3>
+        <p>Car: ₹20 per hour</p>
+        <p>Bike: ₹10 per hour</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>Parking Management System | Student Project</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

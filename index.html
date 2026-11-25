@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parking Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Parking Management System</h1>
+    <p>Smart and Easy Parking Management</p>
+</header>
+
+<nav>
+    <a href="index.html" class="active">Dashboard</a>
+    <a href="vehicles.html">Vehicles</a>
+    <a href="history.html">Parking History</a>
+</nav>
+
+<div class="container">
+
+    <h2>Dashboard</h2>
+    <p>Welcome to Parking Management System</p>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>Total Slots</h3>
+            <h1 id="totalSlots">10</h1>
+        </div>
+
+        <div class="card">
+            <h3>Occupied Slots</h3>
+            <h1 id="occupiedSlots">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>Available Slots</h3>
+            <h1 id="availableSlots">10</h1>
+        </div>
+
+    </div>
+
+    <h2>Parking Slot Status</h2>
+
+    <div class="slots" id="parkingSlots"></div>
+
+    <div class="quick-link">
+        <h3>Manage Your Vehicles</h3>
+        <p>Add new vehicles or manage currently parked vehicles.</p>
+        <a href="vehicles.html" class="btn">Manage Vehicles</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>Parking Management System | Student Project</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
